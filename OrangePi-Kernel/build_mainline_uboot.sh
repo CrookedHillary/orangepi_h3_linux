@@ -3,6 +3,8 @@
 
 #==========================================================
 basepath=$(cd `dirname $0`; pwd)
+# Compiler not set..
+export PATH="$PWD/brandy/gcc-linaro/bin":"$PATH"
 
 if [ "${1}" = "" ]; then
 	echo "USAGE: sudo ./build_mainline_uboot.sh [2|pc|plus|lite|pc-plus|one|plus2e|zero]"
